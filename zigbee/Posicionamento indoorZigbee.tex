@@ -1,0 +1,84 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{authblk}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\title{Posicionamento indoor:\\Zigbee}
+\author{Bruno Guerra Côrtes\and
+Pedro Gustavo Leão de Santana\and
+Rubem de Almeida\and
+Thomas Hamilton Garcia Wicks}
+\date{Salvador\\September 2020}
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+
+\section{Introdução}
+\quad \,Um dos primeiros usos em escala global de rede sem fio foi a comunicação via radiotelegrafia em código Morse na Primeira Guerra Mundial (SANTOS, 2003), que consiste em transmissão de ondas de rádio pelo ar em pulsos curtos e longos, mais conhecido como "pontos" e "traços", entretando, os equipamentos e a energia necessária para o funcionamento ainda eram de alto custo. Com a necessidade de melhorias, em 1998 foi desenvolvido a especificação Bluetooth, um protocolo aberto para conectividade sem fio entre dispositivos de computação e detelecomunicações(PINHEIRO, 2004), rede PAN, inicialmente de curto alcance. 
+
+Apesar do Bluetooth ter sido um grande avanço, ainda consumia muita energia, pesquisas com o intuito de melhorar esses aspectos desenvolveram um padrão de rede sem fio de baixo consumo, ZigBee com performace para monitoramento e controle. ZigBee é um protocolo homologado pela IEEE em 2003, para redes WPAN (Wireless Personal Area Network) possibilitando um controle seguro, de baixo custo e de baixa potência em redes sem fio para diversos dispositivos (COSTA e MENDES, 2006). O Zigbee auxiliou bastante no avanço da IoT (internet das coisas) devido as suas características. A disseminação desse protocolo permitiu avanços na automação doméstica, como utilizar rede ZigBee para controle de ambientes prediais, para aumento da eficiência energética(FERREIRA e GODOY, 2016). 
+
+Mais protocolos de rede sem fio foram desenvolvidos tornando a comunicação sem fio entre dispositivos imprescindível para as atividades humana, hoje podemos controlar iluminação e temperatura com apenas alguns toques no celular (BUENO, 2015) e monitoramento de saúde (Barros, Et al., 2011), por exemplo.
+\section{Tecnologia}
+\quad \,A tecnologia Zigbee consiste de um protocolo de comunicação, que visa o controle de uma rede de comunicação de dispositivos IOT(Internet Of Things). Segundo (ERGEN, 2004)  Zigbee é um protocolo de redes sem fio de baixo custo, consumo e transferência de dados com o objetivo de controlar automações e aplicações remotas. Com o uso do zigbee é possível construir uma rede de comunicação entre dispositivos dentro de uma casa comum, como citado por (FARAHANI, 2008) uma aplicação prática do protocolo é possibilidade de uma pessoa de idade avançada morando sozinho tenha um pulseira que esteja medindo a sua frequência cardíaca e através da rede operada com Zigbee os dados sejam enviados a um computador próximo onde os dados serão analisados e a qualquer sinal de risco um médico responsável pelo paciente será acionado.
+
+O Protocolo Zigbee como definido pelo padrão IEEE é dividido em dois tipos, o de função reduzida e os de função completa. Os dispositivos de função completa são dispositivos um pouco mais complexos que funcionam tanto como coordenadores como dispositivos finais, podendo se comunicar entre si ou com os dispositivos de função reduzida. O dispositivo de função reduzida é mais simples e serve apenas como receptor final, podendo apenas se comunicar com os dispositivos de função completa uma vez que o mesmo apenas recebe ou transmite dados, mas não tem tomada de decisão.
+
+Os dispositivos Zigbee dentro de seus tipos ainda podem ser classificados em três tipos, coordenador roteador ou dispositivo final. O coordenador está sempre ativo e ele é responsável por iniciar as redes e gerenciar a quantidade e o funcionamento dos roteadores. O roteador é aquele por rotear e manusear os dados mais complexos, estando ativo durante essas operações sempre trabalhando com o menor caminho. Por último o dispositivo final, que é sempre o último nó presente na rede, sendo o mais simples dos dispositivos mencionados e tentando sempre gastar a menor quantidade de energia possível sendo responsável apenas por passar as informações de seus sensores (STUHLER, 2012).
+\section{Aplicação}
+\quad \,Como citado anteriormente o zigbee pode atuar de várias formas como por exemplo cadeira de rodas robótica. Segundo (WOLF, 2009) é possível obter uma maior independência de locomoção de deficientes com pouca coordenação motora, pois o robô cadeira é capaz de corrigir as manobras indicadas através de um joystick para desviar automaticamente de obstáculos e centralizar o veículo em corredores e espaços estreitos. As rotas percorridas poderão ser armazenadas em memória para serem refeitas posteriormente de maneira automática pelo robô cadeira. O zigbee é utilizado para receber/enviar a localização da cadeira em uma área determinada a partir de uma triangulação da energia obtida.
+
+O zigbee também pode ser utilizado para enviar dados para um robô como por exemplo robôs omnidirecionais utilizados para competições de futebol. Neles existem um programa que tem como objetivo descrever a movimentação dos robôs durante a partida, e para essa informação chegar até o robô é utilizado um módulo de comunicação que utiliza a tecnologia ZigBee de comunicação sem fio.
+\section{Conclusão}
+\quad\,Na aplicação escolhida, o zigbee foi fundamental em toda parte de comunicação entre os controladores e os sensores, o que fez dele uma peça fundamental no projeto. Com isso, concluiu-se que apesar de estar a muito tempo no mercado, e por isso ja existirem outras tecnologias mais avançadas, ao longo dos anos o Zigbee se provou muito poderosa e de vasta contribuição para a robotica.
+\newpage
+\section{Referência}
+
+ERGEN, S. \textbf{ZigBee/IEEE 802.15.4 Summary}. 2004, Disponível em: \url{http://pages.cs.wisc.edu/~suman/courses/707/papers/zigbee.pdf}. Acesso em: 29 setembro 2020.
+\newline
+\\
+FARAHANI, S. \textbf{ZigBee Wireless Networks and Transceivers. New York}. Elsevier, 2008.
+\newline
+\\
+ARAÚJO, D.  \textbf{CONTROLE DE UM ROBÔ POR UMA REDE SEM FIO COM A UTILIZAÇÃO DO ZIGBEE}. 2011. Disponível em: \url{https://www.univale.br/wp-content/uploads/2019/07/Controle-de-um-rob\%C3\%B4-por-uma-rede-sem-fio-com-a-utiliza\%C3\%A7\%C3\%A3o-do-Zigbee.pdf}. Acesso em: 29 de setembro de 2020.
+\newline
+\\
+STUHLER, J. et al. \textbf{Utilização da Tecnologia Zigbee para Sensoriamento de Nível de Rio para Monitoramento de Cheias}. 2012. Disponível em: \url{https://www.aedb.br/seget/arquivos/artigos12/28416269.pdf}. Acesso em: 29 de setembro de 2020
+\newline
+\\
+WOLF, D. et al. \textbf{Robótica Móvel Inteligente: Da Simulação às Aplicações no Mundo Real}. Disponível em: \url{http://osorio.wait4.org/publications/2009/CL_JAI2009_Completo.pdf}. Acesso em: 29 de setembro de 2020
+\newline
+\\
+BRENNER, V. et al. \textbf{UTBots VSSS 2017 Team Description Paper -Desenvolvimento de um robô omnidirecional voltado às competições de futebol na categoria Very Small Size League}. Disponível em: \url{http://sistemaolimpo.org/midias/uploads/4b5c98099979b18e214d9b5f73535aab.pdf}. Acesso em 29 de setembro de 2020
+\newline
+\\
+BUENO, G. N. de Morais. \textbf{CONTROLE DE ILUMINAÇÃO E TEMPERATURA PELA PLATAFORMA ARDUINO VIA CELULAR}. Disponível em: \url{http://repositorio.roca.utfpr.edu.br/jspui/bitstream/1/8688/1/PG_COAUT_2015_2_04.pdf}. Acesso em 1 de Outubro de 2020
+\newline
+\\
+ESTES, A. Clark. \textbf{Como começou essa história de transmitir informações sem fio}. Disponível em:\url{https://gizmodo.uol.com.br/como-comecou-essa-historia-de-transmitir-informacoes-sem-fio/}. Acesso em 1 de Outubro de 2020
+\newline
+\\
+BARROS, V. F. A. et al. \textbf{Aplicativo Móvel para Automação e Monitoração do Sistema de Atenção Primária a Saúde}. Cadernos de informática, v. 6, n. 1 (2011). Disponível em: \url{https://www.seer.ufrgs.br/cadernosdeinformatica/article/view/v6n1p241-244/11765}. Acesso em 1 de Outubro de 2020
+\newline
+\\
+SANTOS, C. A. Azevedo dos. \textbf{LANDELL DE MOURA OU MARCONI, QUEM É O PIONEIRO?}. INTERCOM – Sociedade Brasileira de Estudos Interdisciplinares da Comunicação XXVI Congresso Brasileiro de Ciências da Comunicação, Belo Horizonte (2003).  Disponível em: \url{https://d1wqtxts1xzle7.cloudfront.net/55347510/2003_NP06_santos.pdf?1513857774=&response-content-disposition=inline\%3B+filename\%3DLandell_de_Moura_ou_Marconi_quem_e_o_pio.pdf&Expires=1601603007&Signature=DA5w6a4LMkclUtEZYfS1kwWeyr3~lEwwL9GUfIrqHnQsykc6EIlu7jgkQDSk9nBQUFP-vpcRFn0xaPMHHOlsSOCa8l3Cbl6Eysei~AXfKCzePPDgFyI3BcuIM97dY4ws0zZFybOqImRyT2s2TIrGMpW7mBuDl0qwYmWareTw0ccuPvl-d7xeXfUwsbjfBaETcO1M77nz1KjCJWIpigHeRihvsyYctDQquL5Cme49cr4j2UmgksA2wh7SYvyxjA86D80X8EAG~ORBxTscJDfIx0jgbZThQSraQeSMX7bZCZEhL~IZTWHFVdNv5T-YW1ShD2F8FGmlt6TEdNT5s33GHQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA}. Acesso em 1 de Outubro de 2020
+\newline
+\\
+PINHEIRO, J. M. S. (2004). \textbf{Por dentro do Bluetooth. Site Projeto de Redes}. Disponível em: \url{http://www.projetoderedes.com.br/artigos/artigo_dentro_bluetooth.php}. Acesso em: 1 de Outubro de 2020.
+\newline
+\\
+COSTA, R. A. A.; Mendes, L. A. M. \textbf{Evolução das Redes sem Fio: Um Estudo Comparativo Entre Bluetooth e ZigBee}. 2006. Disponível em: \url{http://ftp.unipac.br/site/bb/tcc/tcc-a010b188f93af4c28ca9af23b9e3c476.pdf}. Acesso em: 1 de Outubro de 2020.
+\newline
+\\
+FERREIRA, I. V.; Godoy, E. P. \textbf{INTEGRAÇÃO DE INTERNET DAS COISAS E ZIGBEE NO CONTEXTO DE EFICIÊNCIA ENERGÉTICA E AUTOMAÇÃO PREDIAL}. XXI Congresso Brasileiro de Automática - CBA2016 UFES, Vitória (2016). Disponível em: \url{https://ssl4799.websiteseguro.com/swge5/PROCEEDINGS/PDF/CBA2016-0415.pdf}
+\bibliography{referencias}
+\end{document}
